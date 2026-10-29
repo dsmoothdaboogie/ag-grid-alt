@@ -1,0 +1,11 @@
+<ag-grid-angular
+  [columnDefs]="columnDefs"
+  [autoGroupColumnDef]="autoGroupColumnDef"
+  [rowGroupPanelShow]="'always'"
+  [statusBar]="statusBar"
+  [sideBar]="true"
+  [rowModelType]="'serverSide'"
+  (cellSelectionChanged)="onSel($event)"
+  (gridReady)="onGridReady($event)">
+</ag-grid-angular>
+<button (click)="export()">Export</button>
